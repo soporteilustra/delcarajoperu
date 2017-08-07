@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#000"/>
+  <title>Del Carajo Perú</title>
+  <link rel="shorcut icon" href="../assets/media/logo-grande-banner.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+</head>
+<body>
+    <header>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <div class="brand-head">
+              <img id="img-brand" src="../assets/media/logo-grande-banner.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-12 hidden-lg-up p-3 text-center">
+            <button type="button" data-toggle="collapse" data-target="#toggleMenu" aria-controls="toggleMenu" aria-expanded="false" aria-label="Toggle navigation" class="btn btn-outline-qincha" id="btn-toggleMenu" name="button"><i class="fa fa-bars mr-1"></i>Menú</button>
+          </div>
+          <nav class="col-12 mt-4 hidden-md-down menu-qincha">
+            <ul class="nav justify-content-center">
+                 <li class="nav-item">
+                   <a class="nav-link" href="index.html">NOSOTROS</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/reservas">RESERVAS</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link active" href="/programacion">PROGRAMACIÓN</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="../resources/cartas.pdf" target="_blank">CARTA</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="/ubicacion">UBICACIÓN</a>
+                 </li>
+            </ul>
+          </nav>
+          <div class="collapse navbar-collapse" id="toggleMenu">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 text-md-center">
+                 <li class="nav-item">
+                 <a class="nav-link " href="index.html">NOSOTROS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="/reservas">RESERVAS</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link active" href="/programacion">PROGRAMACIÓN</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="../resources/cartas.pdf" target="_blank">CARTA</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link " href="/ubicacion">UBICACIÓN</a>
+               </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hashtag">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="text-higher">#FiestaPeruana</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- contenido de formulario -->
+   <section>
+      <div class="container">
+         <div class="row">
+            <div class="col-12">
+               <h3 class="title mb-3">Nuestra Programación:</h3>
+               <p class="textual">Te ofrecemos la mejor fiesta peruana para que todos los sábados goces al ritmo de sabor y la alegría de nuestra música. <br> Te contamos nuestra programación para que no te pierdas ni una.  </p>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- fin contenido de formulario -->
+
+   <footer>
+     <div class="container">
+       <div class="row">
+         <div class="col-12 col-lg-4 pt-4">
+          <h3 class="title mb-1">En Instragram</h3>
+          <h5 class="m-0 mb-4"><small class="textual">clic en la imagen para interactuar*</small></h5>
+          <div id="feed-insta" class="media-grid row justify-content-start align-items-center"></div>
+          <div class="follow">
+             <a target="_blank" href="https://www.instagram.com/delcarajoperu/"><i class="fa fa-instagram"></i> Síguenos</a>
+          </div>
+         </div>
+
+         <div class="col-12 col-md-6 col-lg-4 pt-4">
+          <div class="row">
+             <div class="col-12 pb-4">
+               <h3 class="title">SUSCRÍBETE</h3>
+               <form id="form-suscribe"class="" action="controller/suscribed.php" method="post">
+                 <div class="form-group">
+                   <label for="exampleInputEmail1" class="textual">Déjanos tus datos para recibir noticias y ofertas</label>
+                   <input type="text" id="inputname" class="input-qincha form-control" required="" name="name" placeholder="Nombre">
+                 </div>
+                 <div class="form-group">
+                   <input id="inputmail" type="email" class="input-qincha form-control" required="" name="email" placeholder="Correo electrónico">
+                 </div>
+                 <div class="form-group mb-0">
+                   <input type="text" class="input-qincha form-control" required="" name="phone" placeholder="Teléfono">
+                 </div>
+                 <div class="form-group" id="formmail">
+                   <label for="exampleInputEmail1" class="qincha-text">Cumpleaños</label>
+                   <input type="date" class="input-qincha form-control" required="" name="date">
+                 </div>
+                 <div class="form-group">
+                   <button type="submit" class="btn btn-outline-qincha" name="button">ENVIAR</button>
+                 </div>
+               </form>
+             </div>
+             <div class="col-12">
+               <h3 class="title mb-4">Encuéntra nuestras redes:</h3>
+               <ul class="list-unstyled list-inline social-links">
+                 <li class="list-inline-item social-links-item"><a target="_blank" data-toggle="tooltip" title="Facebook" class="c-facebook" href="https://www.facebook.com/DelCarajoPeru/"><i class="fa fa-facebook-square"></i></a></li>
+                 <li class="list-inline-item social-links-item"><a target="_blank" data-toggle="tooltip" title="Twitter" class="c-twitter" href="https://twitter.com/delcarajopena"><i class="fa fa-twitter"></i></a></li>
+               </ul>
+             </div>
+          </div>
+         </div>
+
+         <div class="col-12 col-md-6 col-lg-4 contact pt-4">
+          <h3 class="title">Contacto</h3>
+          <ul class="list-unstyled">
+             <li class="textual">
+               <i class="fa fa-map-marker" ></i>
+               Jr Catalino Miranda 158 Barranco, Peru
+             </li>
+             <li class="textual">
+               <i class="fa fa-envelope-o"></i>
+               reservas@delcarajo.com.pe
+             </li>
+             <li class="textual">
+               <i class="fa fa-mobile"></i>
+               (01) 247-7023
+             </li>
+             <li class="textual">
+               <i class="fa fa-clock-o"></i>
+               Lun - Vie | CERRADO
+               <br>
+               <i class="fa fa-clock"></i>
+               Sab | 22:00 - 05:00 h
+               <br>
+               <i class="fa fa-clock"></i>
+               Dom | CERRADO
+             </li>
+          </ul>
+          <div id="map"></div>
+         </div>
+
+       </div>
+     </div>
+   </footer>
+
+   <section id="footer-ilustra">
+        <div class="container">
+             <div class="row justify-content-around">
+                  <div class="col-12 col-md-auto">
+                       <p class="textual">2017 &copy; Del Carajo | Derechos Reservados</p>
+                  </div>
+                  <div class="col-12 col-md-auto">
+                       <p class="textual">Diseñado y desarrollado por <a href="http://www.ilustraconsultores.com">Ilustra Consultores</a></p>
+                  </div>
+             </div>
+        </div>
+   </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV5KwR11Yxqpu-KGaBTuGdaQwLxFZZvv4"></script>
+    <script src="../assets/js/main.js" charset="utf-8"></script>
+    <script src="../assets/js/scrapping.feed.js" charset="utf-8"></script>
+</body>
+</html>
